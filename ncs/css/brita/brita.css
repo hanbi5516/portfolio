@@ -1,0 +1,391 @@
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+ 
+
+
+
+/* 공통부분 */
+
+body{font-family: 'GmarketSansMedium','Noto Sans KR', sans-serif;}
+a,h2{font-family: 'GmarketSansMedium';}
+h3{font-family: 'GmarketSansBold';text-align: center;}
+h4,h5,h6,strong,span,input{font-family: 'GmarketSansLight'; font-weight: 700;}
+p{font-size: 0.8em; font-family: 'GmarketSansLight';font-weight: 700;}
+label{font-family: 'GmarketSansMedium'; margin-bottom: 0;}
+
+
+.review > ul{display: flex; align-items: flex-end;}
+.review > ul > li{margin-right: 30px;}
+
+
+/* nav */
+
+#hd{ padding: 0.5rem 0; }
+.gnb_1da {  
+   
+    font-size: 1.2rem;
+    font-family: 'GmarketSansMedium';
+   
+  }
+  #gnb_all{ left:0}
+  #gnb_all h2{ display: none;}
+
+
+/* 상단배너 슬라이드 */
+#bn .swiper-wrapper .bn1{
+    background-size: 100% auto;
+    background-position: center; 
+    background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/firstbanner_test.jpg);
+}
+#bn .swiper-wrapper .bn2{ 
+    background-size: 100% auto;
+    background-position: center; 
+    background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/secondbanner1_test.jpg);
+}
+#bn .swiper-wrapper .bn3{ 
+    background-size: 100% auto;
+    background-position: center; 
+    background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/lastbanner_test.jpg);
+}
+
+
+
+#Csec, #Dsec, #Esec{ height:100vh; min-height:600px; margin:0 3em; }
+
+#bn .swiper-bn1, #bn .swiper-bn2, #bn .swiper-bn3{background-size: 60vh; max-width: 100%;}
+
+/* 배너, 상단 */
+#bn .swiper-slide{
+    background-size:contain;
+    background-repeat: no-repeat;
+    max-height: 700px;  /*데스크탑 전용 기준 700픽셀이상 커지지 마! */
+    height: 40vw;  /*이렇게 하면 끝! 나는 화면 넓이만큼 높이를 줄게 vw = 화면 넓이 단위*/
+}
+
+
+#container_wr{
+    width: auto !important;
+}
+
+#bnbottom{ width: 100%; height: 5vh; display: flex; justify-content: space-around;}
+
+#logo > a > img{
+    height: 4em;
+}
+.swiper-pagination-bullet{
+    width: 1em; height: 1em; border-radius: 10px; background-color: #b8e4ff; transition: 0.6s;}
+.swiper-pagination-bullet-active.swiper-pagination-bullet{ width:4em;}
+
+.swiper-button-next:after, .swiper-button-prev:after{color: #b8e4ff;}
+
+/* bnbottom */
+#bnbottom .product{
+    width: 100%;
+    height: 4.5em;
+    background-color: #06659F;
+}
+.product{
+    justify-content: space-evenly!important;
+}
+.productext input:focus{ outline: none; box-shadow: none; border:0 !important}
+.productext input[type='text']{ background-color: transparent; border:0; color:#cff0ff}
+.productext li{
+border-bottom:1px solid White
+}
+.product h5,
+.product h6{
+    color: #fff;
+    font-weight: 200;
+}
+.product h5{
+    font-size: 1em;
+}
+.product h6{
+    font-size: 0.8em;
+}
+.productext ul li a{
+    color: #06456b;
+}
+.productext ul li a:hover{
+    color: #007bff;
+}
+.search{width: 1.5em; height: 1.5em;}
+
+
+
+/* Asec */
+#Asec{margin: 0 auto; max-height: 100vh; min-height: 80vh;}
+#Asec h3{margin: 1.5em 0;}
+#Asec .effect .youtubeBox > div{ position: relative; height: 0; padding-top: 56%; }
+#Asec .effect .youtubeBox iframe{ position: absolute; left:0; top:0; width:100%; height:100%;}
+
+/* .britaeffect h4{margin-top: 4.5em;} */
+
+/* Bsec */
+.event h3{margin: 1.5em 0;}
+.event{margin-bottom: 10em;}
+
+.swiper-slide{width: 100%; height: 820px;}
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 820px;
+    object-fit: cover;
+}
+/* #Bsec .swiper-slide{ height:0; padding-top: 42.8%; min-height:800px; background-repeat: no-repeat;} */
+
+
+
+/* Csec */
+#Csec h3{margin: 1.5em 0;}
+
+/* review */
+.re > a > img{
+    height: 20em;
+    width: 21.2em;
+    transition: all 0.2s;
+    width: 100%;
+}
+.re > a:hover > img{
+    transform: scale(1.2, 1.2);
+    transition-duration: 0.5s;
+}
+.re > a{
+    overflow: hidden;
+}
+
+
+.re_img div img{
+    height: 1.5em;
+    width: 1.5em;
+}
+
+
+/* .a img {
+    transition: all 0.2s linear;
+  }
+  .a:hover img {
+    transform: scale(1.4);
+  } 
+  .a {
+  width: 400px;
+  margin: 0px auto;
+  overflow: hidden;
+}*/
+
+.re .re_img p{
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-top: 0.5em;
+}
+.re .re_img{ padding: 0.4rem 0;}
+.rt .re{ padding: 0 1rem; overflow: hidden;}
+/* best아닌 start간격 */
+.rt .re_img > img{ margin-left: 0.4rem; }
+
+/* Dsec */
+#notice > div > h3{margin: 1.5em 0;}
+
+.noticetext{
+    max-width: 75em;
+    height: 10em;
+    background-color: #90E0DB;
+    margin: 0 auto;
+}
+/* #notice form ul{margin: 5em auto;} */
+
+#noticetext input[type='checkbox'] label{font-family: 'GmarketSansLight'; font-weight: 700;}
+#noticetext label{color: #555;font-size: 0.7em;}
+
+.noticename{
+    max-width: 50em;
+    min-width: 35em;
+    border-top: solid 4px #dff7f5;
+    /* border-radius: 3px; */
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    /* line-height: 2.5em; */
+    align-items: center;
+}
+.noticename:nth-last-child(1){
+    border-bottom: solid 4px #dff7f5;
+}
+/* .noticename .check{ margin-left: 5em;} */
+
+.noticename div label{
+    font-size: 0.8em;
+    color: #555; 
+    text-align: center;
+}
+.noticename strong{
+    color: #000;
+    /* margin-right: 6em; */
+    /* margin: 0 auto; */
+    line-height: 3.5em;
+}
+.check{
+    position: relative;
+    display: inline-block;
+}
+.check::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0.153em;
+    background-color: #25c3b9;
+    transition: 0.6s;
+    width: 0;
+}
+
+.check::after{
+    bottom: 0;
+    left: 0;
+    
+}
+.check:hover::after{
+    width: 100%;
+}
+.check input{
+    background-color: transparent;
+    border: 0;
+    color: #90E0DB; 
+}
+
+.send{ border:none; border-radius: 2em; padding: 0.5rem; background-color: #90e0db;}
+.send[type='submit']:hover{background-color: #cff0ff;}
+
+
+
+
+
+
+/* Esec */
+#Esec h3{margin: 1.5em 0;}
+.box{
+    max-width: 60em;
+    min-width: 35em;
+    height: 4em;
+    background-color: #90E0DB;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+}
+
+/* .box input{
+    background-color: transparent;
+    border: 0;
+    color: #06456b; 
+} */
+
+
+.buy_t_1{
+    width: 7em;
+}
+.buy_t_2{
+    width: 15.5em;
+}
+.buy_t_1, .buy_t_2{
+    background-color: transparent;
+    border: 0;
+    color: #06456b;
+}
+/* ================================================ */
+.inbox{
+    position: relative;
+    display: inline-block;
+   }
+ 
+   .inbox::after{
+                 content: "";
+                 display: block;
+                 position: absolute;
+                 height: 0.153em;
+                 background-color: #25c3b9;
+                 transition: 0.6s;
+                 width: 0;
+             }
+ 
+             .inbox::after{
+                 bottom: 0;
+                 left: 0;
+                 
+             }
+             .inbox:hover::after{
+                 width: 100%;
+             }
+ /* ================================================================== */
+
+.mapimg{margin-right: 2em; width: 100%;}
+.mapimg img{max-width: 5rem; height: 5rem;}
+
+.area{margin-left: 2em;}    
+
+.root_daum_roughmap .wrap_controllers{
+    display: none;
+}
+.area_text{
+    border-top: 4px solid #dff7f5;
+    line-height: 3.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 28em;
+}
+.area_text:nth-last-child(1){
+    border-bottom: solid 4px #dff7f5;
+}
+.area_text a{
+    display: block;
+    color: #000;
+}
+.area_text strong{
+    color: #08E1D4;
+}
+
+
+@media (max-width:1280px){
+    #Bsec .swiper-wrapper .swiper-slide{
+        min-height:none;
+        height:100vw;
+        padding-top:0;
+        background-size: auto 100%;
+    }
+    #bn  .swiper-wrapper .swiper-slide{
+        background-size:auto 100%;
+        
+        max-height: none;  /*데스크탑 전용 기준 700픽셀이상 커지지 마! */
+        height: 50vw;  /*이렇게 하면 끝! 나는 화면 넓이만큼 높이를 줄게 vw = 화면 넓이 단위*/
+    }
+}
+@media (max-width:992px){
+    #Asec, #Bsec, #Csec, #Dsec, #Esec{ height: auto;}
+}
+
+@media(min-width:768px){
+    #banner .swiper{
+        height: 650px; padding-top: 0;
+    }
+}
+@media(max-width:768px){
+    #banner .ad{background-position: calc(50% - 10vw);}
+}
