@@ -128,59 +128,67 @@ ul,ol,dl,dd,dt{ list-style: none; margin: 0; padding: 0;}
     color: #666;
 }
 
-
-/* .progress{
-    max-width: 30rem;
-    min-width: 20rem;
-    display: flex;
-    height: 1.5rem;
-    overflow: hidden;
-    line-height: 0;
-    font-size: 1em;
-    background-color: #dbb6ff;
-    border-radius: 4.25rem;
-} */
-/* .progress-bar{
-    text-align: left;
-    padding-left: 14rem;
-    background-color: #ca96fd;
-    color: #444;
-} */
-
-.progress1,
-.progress2,
-.progress3,
-.progress4{
-    max-width: 35rem;
-    min-width: 35rem;
+/* 선미선미 */
+#main .bar1,
+#main .bar2,
+#main .bar3,
+#main .bar4{
     position: relative;
-    display: inline-block;
-    z-index: 5;
+    width: 100%;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 
-.progress1::before,
-.progress2::before,
-.progress3::before,
-.progress4::before{
-    content: "";
-    display: block;
-    position: absolute;
-    height: 2.5em;
-    border-radius: 2em;
-    background-color: #ca96fd;
-    transition: 0.6s;
-    width: 0;
-    left: 0;
-    right: 0;
-    top: -1em;
-    bottom: 0;
-    z-index: 999;
+#main .bar1::before,
+#main .bar2::before,
+#main .bar3::before,
+#main .bar4::before{
+display: block;
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 0;
+height: 40px;
+transition: 1s;
+background-color: #ca96fd;
+border-radius: 20px;
+z-index: 1;
+}
+#main .bar1:hover::before{
+    width: 100%;
+}
+#main .bar2:hover::before{
+    width: 100%;
+}
+#main .bar3:hover::before{
+    width: 80%;
+}
+#main .bar4:hover::before{
+    width: 100%;
 }
 
-.progress1:hover::before{width: 98%;}
-.progress2:hover::before{width: 95%;}
-.progress3:hover::before{width: 80%;}
-.progress4:hover::before{width: 98%;}
+#main .bar1:hover span,
+#main .bar2:hover span,
+#main .bar3:hover span,
+#main .bar4:hover span{
+    color: #666;
+}
+
+#main .bar1 span,
+#main .bar2 span,
+#main .bar3 span,
+#main .bar4 span{
+color: transparent;
+position: relative;
+z-index: 99;
+transition: 0.6s;
+line-height: 40px;
+/* padding-left: 50%; */
+} 
+
+  /* 선미선미 */
+
 
 /* ================================= */
 .check{
@@ -233,3 +241,5 @@ ul,ol,dl,dd,dt{ list-style: none; margin: 0; padding: 0;}
 .copy{
     font-size: 0.8em;
 }
+
+.m{}
