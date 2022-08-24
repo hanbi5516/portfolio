@@ -135,8 +135,8 @@ ul,ol,dl,dd,dt{ list-style: none; margin: 0; padding: 0;}
 #main .bar4{
     position: relative;
     width: 100%;
-    margin-left: 5em;
-    margin-right: 5em;
+    /* margin-left: 3em;
+    margin-right: 3em; */
 }
 
 #main .bar1::before,
@@ -162,7 +162,7 @@ z-index: 1;
     width: 100%;
 }
 #main .bar3:hover::before{
-    width: 80%;
+    width: 90%;
 }
 #main .bar4:hover::before{
     width: 100%;
@@ -216,7 +216,10 @@ line-height: 40px;
 
 /* bg3 */
 
-
+.bg ul li{
+    display: inline;
+    margin: 20px 0;
+}
 
 
 
