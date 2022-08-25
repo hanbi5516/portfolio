@@ -91,11 +91,15 @@ label{font-family: 'GmarketSansMedium'; margin-bottom: 0;}
 #logo > a > img{
     height: 4em;
 }
-.swiper-pagination-bullet{
-    width: 1em; height: 1em; border-radius: 10px; background-color: #b8e4ff; transition: 0.6s;}
-.swiper-pagination-bullet-active.swiper-pagination-bullet{ width:4em;}
-
-.swiper-button-next:after, .swiper-button-prev:after{color: #b8e4ff;}
+#bn .swiper-pagination-bullet, #Bsec .swiper-pagination-bullet{
+    width: 1.5em; height: 1.5em; border-radius: 15px; transition: 0.6s;
+}
+#bn .swiper-pagination-bullet-active,
+#Bsec .swiper-pagination-bullet-active{
+    width:4em;
+}
+#bn .swiper-button-next:after, #bn .swiper-button-prev:after,
+#Bsec .swiper-button-next:after, #Bsec .swiper-button-prev:after{color: #b8e4ff;}
 
 /* bnbottom */
 #bnbottom .product{
@@ -282,7 +286,7 @@ border-bottom:1px solid White
 /* Esec */
 #Esec h3{margin: 1.5em 0;}
 .box{
-    max-width: 60em;
+    max-width: 70em;
     min-width: 35em;
     height: 4em;
     background-color: #90E0DB;
@@ -298,13 +302,13 @@ border-bottom:1px solid White
 } */
 
 
-.buy_t_1{
+.search_t_1{
     width: 7em;
 }
-.buy_t_2{
+.search_t_2{
     width: 15.5em;
 }
-.buy_t_1, .buy_t_2{
+.search_t_1, .search_t_2{
     background-color: transparent;
     border: 0;
     color: #06456b;
@@ -335,6 +339,8 @@ border-bottom:1px solid White
              }
  /* ================================================================== */
 
+
+
 .mapimg{margin-right: 2em; width: 100%;}
 .mapimg img{max-width: 5rem; height: 5rem;}
 
@@ -361,6 +367,38 @@ border-bottom:1px solid White
 .area_text strong{
     color: #08E1D4;
 }
+
+#map .swiper-pagination-bullets{width: 60%; margin: 5em 0;}
+#map .swiper-pagination-bullet{
+    width: 2em;
+    height: 2em;
+    border-radius: 20px;
+    background-color: #90E0DB;
+    color: #90E0DB;
+    transition: 0.6s;
+    line-height: 2.25em;
+}
+
+#map .swiper-pagination-bullet-active{
+    width: 10em;
+    color: #555;
+}
+
+
+/* ========================== */
+
+/* #bn .swiper-pagination-bullet, #Bsec .swiper-pagination-bullet{
+    width: 1em; height: 1em; border-radius: 10px; background-color: #b8e4ff; transition: 0.6s;
+}
+#bn .swiper-pagination-bullet-active,
+#Bsec .swiper-pagination-bullet-active{
+    width:4em;
+}
+#bn .swiper-button-next:after, #bn .swiper-button-prev:after,
+#Bsec .swiper-button-next:after, #Bsec .swiper-button-prev:after{color: #b8e4ff;} */
+
+
+/* ========================== */
 
 
 @media (max-width:1280px){

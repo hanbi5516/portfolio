@@ -26,7 +26,7 @@ include_once(G5_THEME_PATH.'/head.php');
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination bnbutton"></div>
         </div>
     </div>
 
@@ -239,15 +239,15 @@ include_once(G5_THEME_PATH.'/head.php');
         <h3>판매처찾기</h3>
         <div class="box d-md-flex justify-content-md-center my-md-5">
             <div class="inbox mr-md-5 px-md-2">
-                <input class="buy_t_1" type="text" placeholder='검색으로 찾기'>
+                <input class="search_t_1" type="text" placeholder='검색으로 찾기'>
                 <i class="fas fa-caret-down text-white"></i>
             </div>
             <div class="inbox ml-md-5 px-md-2">
-                <input class="buy_t_2" type="text" placeholder='매장, 도로명, 동명을 검색해주세요.'>
-                <i class="far fa-search text-white"></i>
+                <input class="search_t_2" type="text" placeholder='매장, 도로명, 동명을 검색해주세요.'>
+                <i class="fa-solid fa-lg fa-magnifying-glass text-white"></i>
             </div>
         </div>
-        <div class="map row justify-content-center">
+        <div id="map" class="map row justify-content-center">
             <!-- * 카카오맵 - 지도퍼가기 -->
             <!-- 1. 지도 노드 -->
             <div id="daumRoughmapContainer1660707882513" class="root_daum_roughmap root_daum_roughmap_landing"></div>
@@ -269,25 +269,29 @@ include_once(G5_THEME_PATH.'/head.php');
             <div class="area">
                 <ul class="my-md-5">
                     <li class="area_text px-3">
-                        <a href="">용산점</a>
+                        <a href="https://place.map.kakao.com/1902537591" target="_blank">용산점</a>
                         <strong>new open!</strong>
                         <span>서울 용산구 한강대로30길 25</span>
                     </li>
                     <li class="area_text px-3">
-                        <a href="">가로수길점</a>
+                        <a href="https://place.map.kakao.com/10135149" target="_blank">가로수길점</a>
                         <strong>new open!</strong>
                         <span>서울 강남구 도산대로 128</span>
                     </li>
                     <li class="area_text px-3">
-                        <a href="">강남점</a>
+                        <a href="https://place.map.kakao.com/7877178" target="_blank">강남점</a>
                         <span>서울 강남구 영동대로 513</span>
                     </li>
                     <li class="area_text px-3">
-                        <a href="">송파점</a>
+                        <a href="https://place.map.kakao.com/25975699" target="_blank">송파점</a>
                         <span>서울 송파구 올림픽로 300</span>
                     </li>
                 </ul>
             </div>
+
+            <div class="pagebutton text-center"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
 
