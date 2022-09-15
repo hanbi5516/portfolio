@@ -6,7 +6,7 @@ window.onload=function(){
 
 $(document).ready(function(){
 
-    var swiper = new Swiper(".event-mySwiper", {
+    var swiperEvent = new Swiper(".event-mySwiper", {
         slidesPerView: 1,
         spaceBetween: 0,
         loop: true,
@@ -20,7 +20,7 @@ $(document).ready(function(){
         },
       });
 
-      var swiper = new Swiper("#bn .mySwiper", {
+      var swiperBn = new Swiper("#bn .mySwiper", {
         spaceBetween: 0,
         centeredSlides: true,
         loop: true,
@@ -46,7 +46,7 @@ $(document).ready(function(){
 
     var swiper = new Swiper(".mySwiper", {
       pagination: {
-        el: ".pagebutton",
+        el: ".mySwiper .pagebutton",
         clickable: true,
         renderBullet: function (index, className) {
           return '<span class="' + className + '">' + (index + 1) + "</span>";

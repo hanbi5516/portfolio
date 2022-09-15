@@ -78,25 +78,29 @@ include_once(G5_THEME_PATH.'/head.php');
         
     </section>
     <section id="Bsec" class="mx-0 py-4">
-        <div class="event">
+        <div class="event mb-md-5 pb-md-5">
             <h3>이벤트</h3>
             <div class="swiper event-mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="/ncs/img/britaproject_img/firstevent_test.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="/ncs/img/britaproject_img/secondevent_test.png" alt=""></div>
+                    <div class="swiper-slide firstevent" >
+
+                    </div>
+                    <div class="swiper-slide secondevent" >
+                   
+                    </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination bnbutton"></div>
             </div>
         </div>
     </section>
 
-    <section id="Csec" class="py-4">
+    <section id="Csec" class="py-4 col-8 m-auto col-md-12 ">
         <h3>고객찐리뷰</h3>
         <div class="rt row justify-content-center pt-5">
-            <div class="re col-lg col-md-8 mx-md-auto text-center text-lg-left mb-5 mb-lg-0">
-                <a href=""><img src="/ncs/img/britaproject_img/review1.jpg" alt=""></a>
+            <div class="re col-lg col-md-8 mx-md-auto text-lg-left mb-5 mb-lg-0">
+                <a href="" class='d-block  text-center '><img src="/ncs/img/britaproject_img/review1.jpg" alt=""></a>
                 <div class="re_img d-flex justify-content-between align-items-center">
                     <p class="mb-0">best review</p>
                     <div>
@@ -111,8 +115,8 @@ include_once(G5_THEME_PATH.'/head.php');
                 <p class="text-left mb-0 pt-3">드디어 입문한 브리타 플로우! 냉장고에 쏙 들어가는 크기라 자리를 많이 차지하지도 않고 시원하게 마실 수 있어서 대만족입니다ㅠㅠ!
                 </p>
             </div>
-            <div class="re col-lg col-md-6">
-                <a href="#none"><img src="/ncs/img/britaproject_img/review2.jpg" alt=""></a>
+            <div class="re col-lg col-md-6  mb-5 mb-lg-0">
+                <a href="#none" class='d-block  text-center '><img src="/ncs/img/britaproject_img/review2.jpg" alt=""></a>
                 <div class="re_img d-flex justify-content-between align-items-center">
                     <p class="mb-0">best review</p>
                     <div>
@@ -126,8 +130,8 @@ include_once(G5_THEME_PATH.'/head.php');
                 <p class="mb-0 pt-3">물맛이 너무 좋아서 재구매하러 왔습니다 ~ 보관도 용이하고 플라스틱도 눈에 띄게 줄어서 제로 웨이스트 참여하는 기분이라 보람차고 좋아요!
                 </p>
             </div>
-            <div class="re col-lg col-md-6">
-                <a href=""><img src="/ncs/img/britaproject_img/review3.jpg" alt=""></a>
+            <div class="re col-lg col-md-6  mb-5 mb-lg-0">
+                <a href="" class='d-block  text-center '><img src="/ncs/img/britaproject_img/review3.jpg" alt=""></a>
                 <div class="re_img d-flex justify-content-between align-items-center">
                     <p class="mb-0">real review</p>
                     <div>
@@ -140,8 +144,8 @@ include_once(G5_THEME_PATH.'/head.php');
                 <p class="mb-0 pt-3">친정엄마 집에 하나 사드렸어요~ 고양이를 키우시는데 자꾸 버튼을 눌러서 물바다가 되는게 고민이라고 하셔서 이번에 큰맘먹고 바꿔드렸어요~ㅎㅎ
                 </p>
             </div>
-            <div class="re col-lg col-md-6">
-                <a href=""><img src="/ncs/img/britaproject_img/review4.jpg" alt=""></a>
+            <div class="re col-lg col-md-6  mb-5 mb-lg-0">
+                <a href="" class='d-block  text-center'><img src="/ncs/img/britaproject_img/review4.jpg" alt=""></a>
                 
                 <div class="re_img d-flex justify-content-between align-items-center">
                     <p class="mb-0">real review</p>
@@ -155,8 +159,8 @@ include_once(G5_THEME_PATH.'/head.php');
                 <p class="mb-0 pt-3">사무실에 놓을겸 대용량으로 구매해서 사용중입니다 직원들도 만족하고 있고 생각보다 필터를 자주갈지 않아도 되고 유튜브에 나와있는대로 따라하는데
                 </p>
             </div>
-            <div class="re col-lg col-md-6">
-                <a href=""><img src="/ncs/img/britaproject_img/review5.jpg" alt=""></a>
+            <div class="re col-lg col-md-6  mb-5 mb-lg-0">
+                <a href=""  class='d-block  text-center '><img src="/ncs/img/britaproject_img/review5.jpg" alt=""></a>
                 <div class="re_img d-flex justify-content-between align-items-center">
                 <p class="mb-0">real review</p>
                     <div>
@@ -235,11 +239,11 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
     </section>
 
-    <section id="Esec" class="py-4">
+    <section id="Esec" class="py-4 container-lg mx-auto">
         <h3>판매처찾기</h3>
         <div class="box d-md-flex justify-content-md-center my-md-5">
             <div class="inbox mr-md-5 px-md-2">
-                <input class="search_t_1" type="text" placeholder='검색으로 찾기'>
+                <input id="member_post" class="search_t_1" type="text" placeholder='검색으로 찾기' readonly onclick="findAddr()">
                 <i class="fas fa-caret-down text-white"></i>
             </div>
             <div class="inbox ml-md-5 px-md-2">
@@ -247,52 +251,80 @@ include_once(G5_THEME_PATH.'/head.php');
                 <i class="fa-solid fa-lg fa-magnifying-glass text-white"></i>
             </div>
         </div>
-        <div id="map" class="map row justify-content-center">
-            <!-- * 카카오맵 - 지도퍼가기 -->
-            <!-- 1. 지도 노드 -->
-            <div id="daumRoughmapContainer1660707882513" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+        
+        <div id="mapSection" class="map d-lg-flex justify-content-between  ">
+            
 
-            <!--
+            
+            <!--카카오톡 API 키 :  f423ad49145ddb6fa43ae59b013fe7fd 
+        f423ad49145ddb6fa43ae59b013fe7fd-->
+            <!--37.5279366, 126.9690829
                 2. 설치 스크립트
                 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
             -->
-            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+           
+            <div id="map" class="col-lg-7 px-0"></div>
 
-            <!-- 3. 실행 스크립트 -->
-            <script charset="UTF-8">
-                new daum.roughmap.Lander({
-                    "timestamp" : "1660707882513",
-                    "key" : "2bebm",
-                }).render();
-            </script>
-
-            <div class="area">
+            <div class="area col-lg-5 pl-lg-5 pr-lg-0">
                 <ul class="my-md-5">
-                    <li class="area_text px-3">
-                        <a href="https://place.map.kakao.com/1902537591" target="_blank">용산점</a>
-                        <strong>new open!</strong>
-                        <span>서울 용산구 한강대로30길 25</span>
+                    <li class="area_text justify-content-between w-100">
+                        <a href="#none"   onclick='mapKakaoload(37.5277242,126.9689913, "용산점")'>용산점</a>
+                        <strong class='ml-3'>new open!</strong>
+                        <span class='ml-auto'><a href="https://place.map.kakao.com/1902537591" target="_blank">서울 용산구 한강대로30길 25</a></span>
                     </li>
-                    <li class="area_text px-3">
-                        <a href="https://place.map.kakao.com/10135149" target="_blank">가로수길점</a>
-                        <strong>new open!</strong>
-                        <span>서울 강남구 도산대로 128</span>
+                    <li class="area_text justify-content-between w-100">
+                        <a href="#none"   onclick='mapKakaoload(37.5169329,127.0226927, "가로수길점")'>가로수길점</a>
+                        <strong class='ml-3'>new open!</strong>
+                        <span class='ml-auto'><a href="https://place.map.kakao.com/10135149" target="_blank">서울 강남구 도산대로 128</a></span>
                     </li>
-                    <li class="area_text px-3">
-                        <a href="https://place.map.kakao.com/7877178" target="_blank">강남점</a>
-                        <span>서울 강남구 영동대로 513</span>
+                    <li class="area_text justify-content-between w-100">
+                        <a href="#none" onclick='mapKakaoload(37.5101935,127.0585824, "강남점")' >강남점</a>
+                        <span><a href="https://place.map.kakao.com/7877178" target="_blank">서울 강남구 영동대로 513</a></span>
                     </li>
-                    <li class="area_text px-3">
-                        <a href="https://place.map.kakao.com/25975699" target="_blank">송파점</a>
-                        <span>서울 송파구 올림픽로 300</span>
+                    <li class="area_text justify-content-between w-100">
+                        <a href="#none"  onclick='mapKakaoload(37.5126229,127.1016264, "송파점")' data-x='' data-y=''>송파점</a>
+                        <span><a href="https://place.map.kakao.com/25975699" target="_blank">서울 송파구 올림픽로 300</a></span>
                     </li>
                 </ul>
             </div>
 
             <div class="pagebutton text-center"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+           
+
         </div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=69039600d1490a5378469fe914d31242"></script>
+        <!-- &libraries=services,clusterer,drawing -->
+        <script>
+    mapKakaoload(37.5277242,126.9689913,'용산점')
+    function mapKakaoload(a,b, c){
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = { 
+            center: new kakao.maps.LatLng(a, b), // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        };
+
+    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+    var iwContent = '<div id="mapTextdiv" style="text-align:center">'+c+'</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+        iwPosition = new kakao.maps.LatLng(a, b), //인포윈도우 표시 위치입니다
+        iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+
+    // 인포윈도우를 생성하고 지도에 표시합니다
+    var infowindow = new kakao.maps.InfoWindow({
+        map: map, // 인포윈도우가 표시될 지도
+        position : iwPosition, 
+        content : iwContent,
+        removable : iwRemoveable
+    });
+    }
+
+   
+       
+        </script>
+
+     
+        </div>
+        
     </section>
 
 

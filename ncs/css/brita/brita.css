@@ -26,11 +26,10 @@
 /* 공통부분 */
 
 body{font-family: 'GmarketSansMedium','Noto Sans KR', sans-serif;}
-a,h2{font-family: 'GmarketSansMedium';}
 h3{font-family: 'GmarketSansBold';text-align: center;}
 h4,h5,h6,strong,span,input{font-family: 'GmarketSansLight'; font-weight: 700;}
 p{font-size: 0.8em; font-family: 'GmarketSansLight';font-weight: 700;}
-label{font-family: 'GmarketSansMedium'; margin-bottom: 0;}
+label{margin-bottom: 0;}
 
 
 .review > ul{display: flex; align-items: flex-end;}
@@ -42,9 +41,7 @@ label{font-family: 'GmarketSansMedium'; margin-bottom: 0;}
 #hd{ padding: 0.5rem 0; }
 .gnb_1da {  
    
-    font-size: 1.2rem;
-    font-family: 'GmarketSansMedium';
-   
+    font-size: 1.2rem; 
   }
   #gnb_all{ left:0}
   #gnb_all h2{ display: none;}
@@ -69,7 +66,7 @@ label{font-family: 'GmarketSansMedium'; margin-bottom: 0;}
 
 
 
-#Csec, #Dsec, #Esec{ height:100vh; min-height:600px; margin:0 3em; }
+#Csec, #Dsec, #Esec{ margin: 80px 0; min-height:600px; }
 
 #bn .swiper-bn1, #bn .swiper-bn2, #bn .swiper-bn3{background-size: 60vh; max-width: 100%;}
 
@@ -92,14 +89,14 @@ label{font-family: 'GmarketSansMedium'; margin-bottom: 0;}
     height: 4em;
 }
 #bn .swiper-pagination-bullet, #Bsec .swiper-pagination-bullet{
-    width: 1.5em; height: 1.5em; border-radius: 15px; transition: 0.6s;
+    width: 1.5em; height: 1.5em; border-radius: 15px; transition: 0.6s; background-color: #b8e4ff;
 }
 #bn .swiper-pagination-bullet-active,
 #Bsec .swiper-pagination-bullet-active{
     width:4em;
 }
 #bn .swiper-button-next:after, #bn .swiper-button-prev:after,
-#Bsec .swiper-button-next:after, #Bsec .swiper-button-prev:after{color: #b8e4ff;}
+#Bsec .swiper-button-next:after, #Bsec .swiper-button-prev:after{color: #439fd8;}
 
 /* bnbottom */
 #bnbottom .product{
@@ -137,7 +134,7 @@ border-bottom:1px solid White
 
 
 /* Asec */
-#Asec{margin: 0 auto; max-height: 100vh; min-height: 80vh;}
+#Asec{margin: 0 auto; max-height: 100vh; }
 #Asec h3{margin: 1.5em 0;}
 #Asec .effect .youtubeBox > div{ position: relative; height: 0; padding-top: 56%; }
 #Asec .effect .youtubeBox iframe{ position: absolute; left:0; top:0; width:100%; height:100%;}
@@ -146,7 +143,7 @@ border-bottom:1px solid White
 
 /* Bsec */
 .event h3{margin: 1.5em 0;}
-.event{margin-bottom: 10em;}
+
 
 .swiper-slide{width: 100%; height: 820px;}
 .swiper-slide img{
@@ -164,10 +161,12 @@ border-bottom:1px solid White
 
 /* review */
 .re > a > img{
-    height: 20em;
-    width: 21.2em;
+    /* height: 20em; */
+    /* width: 21.2em; */
     transition: all 0.2s;
-    width: 100%;
+    max-width: 100%;
+    width: 350px;
+    height: 350px;
 }
 .re > a:hover > img{
     transform: scale(1.2, 1.2);
@@ -286,11 +285,9 @@ border-bottom:1px solid White
 /* Esec */
 #Esec h3{margin: 1.5em 0;}
 .box{
-    max-width: 70em;
-    min-width: 35em;
+      
     height: 4em;
-    background-color: #90E0DB;
-    margin: 0 auto;
+    background-color: #90E0DB;   
     align-items: center;
     position: relative;
 }
@@ -339,12 +336,11 @@ border-bottom:1px solid White
              }
  /* ================================================================== */
 
-
+#mapTextdiv{ text-align: center;}
 
 .mapimg{margin-right: 2em; width: 100%;}
 .mapimg img{max-width: 5rem; height: 5rem;}
 
-.area{margin-left: 2em;}    
 
 .root_daum_roughmap .wrap_controllers{
     display: none;
@@ -384,6 +380,44 @@ border-bottom:1px solid White
     color: #555;
 }
 
+#map { max-height:400px; height:80vw}
+
+.map_wrap, .map_wrap * {margin:0;padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:12px;}
+.map_wrap a, .map_wrap a:hover, .map_wrap a:active{color:#000;text-decoration: none;}
+.map_wrap {position:relative;width:100%;height:500px;}
+#menu_wrap {position:absolute;top:0;left:0;bottom:0;width:250px;margin:10px 0 30px 10px;padding:5px;overflow-y:auto;background:rgba(255, 255, 255, 0.7);z-index: 1;font-size:12px;border-radius: 10px;}
+.bg_white {background:#fff;}
+#menu_wrap hr {display: block; height: 1px;border: 0; border-top: 2px solid #5F5F5F;margin:3px 0;}
+#menu_wrap .option{text-align: center;}
+#menu_wrap .option p {margin:10px 0;}  
+#menu_wrap .option button {margin-left:5px;}
+#placesList li {list-style: none;}
+#placesList .item {position:relative;border-bottom:1px solid #888;overflow: hidden;cursor: pointer;min-height: 65px;}
+#placesList .item span {display: block;margin-top:4px;}
+#placesList .item h5, #placesList .item .info {text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+#placesList .item .info{padding:10px 0 10px 55px;}
+#placesList .info .gray {color:#8a8a8a;}
+#placesList .info .jibun {padding-left:26px;background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png) no-repeat;}
+#placesList .info .tel {color:#009900;}
+#placesList .item .markerbg {float:left;position:absolute;width:36px; height:37px;margin:10px 0 0 10px;background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png) no-repeat;}
+#placesList .item .marker_1 {background-position: 0 -10px;}
+#placesList .item .marker_2 {background-position: 0 -56px;}
+#placesList .item .marker_3 {background-position: 0 -102px}
+#placesList .item .marker_4 {background-position: 0 -148px;}
+#placesList .item .marker_5 {background-position: 0 -194px;}
+#placesList .item .marker_6 {background-position: 0 -240px;}
+#placesList .item .marker_7 {background-position: 0 -286px;}
+#placesList .item .marker_8 {background-position: 0 -332px;}
+#placesList .item .marker_9 {background-position: 0 -378px;}
+#placesList .item .marker_10 {background-position: 0 -423px;}
+#placesList .item .marker_11 {background-position: 0 -470px;}
+#placesList .item .marker_12 {background-position: 0 -516px;}
+#placesList .item .marker_13 {background-position: 0 -562px;}
+#placesList .item .marker_14 {background-position: 0 -608px;}
+#placesList .item .marker_15 {background-position: 0 -654px;}
+#pagination {margin:10px auto;text-align: center;}
+#pagination a {display:inline-block;margin-right:10px;}
+#pagination .on {font-weight: bold; cursor: default;color:#777;}
 
 /* ========================== */
 
@@ -399,15 +433,25 @@ border-bottom:1px solid White
 
 
 /* ========================== */
+.firstevent{
+    background-image:url(/ncs/img/britaproject_img/firstevent_test.jpg);
+    
+}
+.secondevent{
+    background-image:url(/ncs/img/britaproject_img/secondevent_test.png);
+    
+}
 
+
+@media (min-width:992px) {
+    .event  .swiper-slide{  background-size:100% auto; }
+    
+}
+
+.event  .swiper-slide{ height:54vw;  background-repeat: no-repeat; background-position: center; max-height:700px; }
 
 @media (max-width:1280px){
-    #Bsec .swiper-wrapper .swiper-slide{
-        min-height:none;
-        height:100vw;
-        padding-top:0;
-        background-size: auto 100%;
-    }
+  
     #bn  .swiper-wrapper .swiper-slide{
         background-size:auto 100%;
         
@@ -417,6 +461,8 @@ border-bottom:1px solid White
 }
 @media (max-width:992px){
     #Asec, #Bsec, #Csec, #Dsec, #Esec{ height: auto;}
+    .event  .swiper-slide{ background-size: auto 100%;}
+
 }
 
 @media(min-width:768px){
